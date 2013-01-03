@@ -1,7 +1,7 @@
 # A sample Gemfile
 source "http://rubygems.org"
 source "http://gems.github.com"
-ruby 'ruby 1.8.7'
+ruby '1.8.7'
 # gem "rails"
 gem "rails", "2.3.11"
 gem "pg"
