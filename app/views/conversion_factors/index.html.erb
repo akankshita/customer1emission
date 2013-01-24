@@ -41,7 +41,7 @@
 	<td><%= link_to 'Edit', edit_conversion_factor_path(cfs), :class=>"edit_button"%>      	</td>  		
 	<td><%= link_to 'Delete', cfs, :confirm => 'Are you sure?', :method => :delete, :class=>"delete_button" %></td>
   </tr>
-<%end%>
+      <% end %>		
 </table>
 
 <h3>Gas</h3>
@@ -58,6 +58,9 @@
 <% @gas_conversion_factors.each do |cfs| %>  
 
 <!--	
+=======
+	
+>>>>>>> 3947d5e0b5b7d3792ce0783cf3218baea847ddd7
 	  <% if cfs.official %>
 	  	<tr class="<%= cycle('odd','even') %>">
 		<td> <%=h cfs.rate %> </td>
@@ -74,6 +77,7 @@
     	<td><%= link_to 'Delete', cfs, :confirm => 'Are you sure?', :method => :delete, :class=>"delete_button" %></td>
     </tr>
 
+<<<<<<< HEAD
       <% end %>
 -->
   <tr class="<%= cycle('odd','even') %>">
@@ -83,7 +87,7 @@
 	<td><%= link_to 'Edit', edit_conversion_factor_path(cfs), :class=>"edit_button" %> </td>   		
 	<td><%= link_to 'Delete', cfs, :confirm => 'Are you sure?', :method => :delete, :class=>"delete_button" %></td>
   </tr>
-<%end%>
+      <% end %>		
 </table>
 
 

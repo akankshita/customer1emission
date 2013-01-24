@@ -22,6 +22,7 @@
 	<td><%=h TimeUtils.to_uk_s(gas_reading.end_time) %></td>
 	<!--td><%#=h gas_reading.meter.node_entry.name %></td-->
     <td>Super User<%#=h gas_reading.user.username %></td>
+	<td><%=h gas_reading.meter.node_entry.name %></td>
     <% if gas_reading.gas_upload.nil? %>
 		<td>Manual input</td>
 	<% else %>

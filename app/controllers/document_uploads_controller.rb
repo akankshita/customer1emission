@@ -5,7 +5,6 @@ class DocumentUploadsController < ApplicationController
   def index
     @document_uploads = DocumentUpload.all
   end
-
   def show
 
   end

@@ -53,7 +53,6 @@ def index
   @days_with_data = values.size
 
 	@day_data = StringUtils.generate_json_array_without_timestamp(values, "data")
-  #render :text =>   @day_data.inspect and return false
 	@day_categories = StringUtils.generate_json_array_without_timestamp(names, "categories")
 	
 	
@@ -62,6 +61,8 @@ def index
 	names=[]
 #render :text => calc_string.inspect and return false
 	result = ElectricityReading.find_by_sql("select #{calc_string} as value, extract(month from end_time) as month from electricity_readings where start_time >= '#{start_date}' AND end_time <= '#{end_date} 23:30'  group by month order by month;")
+
+	result = ElectricityReading.find_by_sql("select #{calc_string} as value, extract(month from end_time) as month from electricity_readings where start_time >= '#{start_date}' AND end_time <= '#{end_date}'  group by month order by month;")
 	months = FilterUtils.get_month_hash
 	 
 	result.each do |k|

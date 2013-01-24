@@ -6,7 +6,6 @@ class ApplicationController < ActionController::Base
 before_filter :menu
 
 
-
   helper :all # include all helpers, all the time
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
 

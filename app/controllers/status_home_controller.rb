@@ -1,5 +1,6 @@
 class StatusHomeController < ApplicationController
   def index
+
     @hback = 'background:#37910E;margin-top:2px;height:36px;'
     @uback = ''
     @rback = ''
@@ -7,6 +8,7 @@ class StatusHomeController < ApplicationController
     @gback = ''
     @aback = ''
     @helpback = ''
+
     @documents_count = DocumentUpload.all.size
 
 

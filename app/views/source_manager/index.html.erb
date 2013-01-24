@@ -4,9 +4,6 @@
 var init_data = [<%= @init_data %>]
  $(function () {
 	$("#tree_view").bind("select_node.jstree", function (event, data) {
-	 // alert(data.args[0].parentNode.id);
-	  	//$("#conversion_factor_source_type_id").change(function(){
-		//alert($(this).val());
 		$.ajax({
         url: '/edit_node',
         type: "POST",
