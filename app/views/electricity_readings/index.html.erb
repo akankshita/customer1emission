@@ -12,8 +12,8 @@
 	<th>Electricity upload File name</th>
 	<th>User</th>
 	<th>Show</th>
-	<th>Edit</th>
-	<th>Delete</th>
+	<!--th>Edit</th>
+	<th>Delete</th-->
   </tr>
 
 <% @electricity_readings.each do |electricity_reading| %>
@@ -28,8 +28,8 @@
 	<% end %>
 	<td>Super User<%#=h electricity_reading.user.username %></td>
 	<td><%= link_to 'Show', electricity_reading, :class => "show_button nohover" %></td>
-	<td><%= link_to 'Edit', edit_electricity_reading_path(electricity_reading), :class => "edit_button nohover" %></td>
-    <td><%= link_to 'Delete', electricity_reading, :confirm => 'Are you sure?', :method => :delete, :class => "delete_button nohover" %></td>
+	<!--td><%#= link_to 'Edit', edit_electricity_reading_path(electricity_reading), :class => "edit_button nohover" %></td>
+    <td><%#= link_to 'Delete', electricity_reading, :confirm => 'Are you sure?', :method => :delete, :class => "delete_button nohover" %></td-->
 	
   </tr>
 <% end %>

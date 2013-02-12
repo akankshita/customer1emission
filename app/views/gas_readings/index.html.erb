@@ -12,8 +12,8 @@
     <th>Entered By</th>
 	<th>Gas upload file</th>
 	<th>Show</th>
-	<th>Edit</th>
-	<th>Delete</th>
+	<!--th>Edit</th>
+	<th>Delete</th-->
   </tr>
 
 <% @gas_readings.each do |gas_reading| %>
@@ -29,8 +29,8 @@
 		<td><%=h gas_reading.gas_upload.filename %></td>
 	<% end %>
 	<td><%= link_to 'Show', gas_reading, :class => "show_button nohover" %></td>
-	<td><%= link_to 'Edit', edit_gas_reading_path(gas_reading), :class => "edit_button nohover" %></td>
-    <td><%= link_to 'Delete', gas_reading, :confirm => 'Are you sure?', :method => :delete, :class => "delete_button nohover" %></td>
+	<!--td><%#= link_to 'Edit', edit_gas_reading_path(gas_reading), :class => "edit_button nohover" %></td>
+    <td><%#= link_to 'Delete', gas_reading, :confirm => 'Are you sure?', :method => :delete, :class => "delete_button nohover" %></td-->
   </tr>
 <% end %>
 </table>

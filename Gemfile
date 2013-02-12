@@ -12,7 +12,8 @@ gem "cancan"
 gem "authlogic"
 gem "rdoc"
 gem "td"
-gem 'newrelic_rpm'  
+gem 'newrelic_rpm'
+gem 'json', '1.7.7'
 
 group :production do
   gem "ruby-debug"
@@ -37,5 +38,5 @@ group :test do
   gem "cucumber", ">=0.3.2"
   gem "cucumber-rails", ">=0.3.2"
   gem 'database_cleaner', '>=0.5.0'
-  gem 'rcov'
+  #gem 'rcov'
 end
